@@ -8,12 +8,11 @@
     <?php wp_head(); ?>
 </head>
 <header>
-    <img src="">
-    <nav>
-        <a>Vous êtes?</a>
-        <a>La coopérative</a>
-        <a>Contact</a>
-    </nav>
+    <div class="header_wrapper">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos.png">
+        <?php wp_nav_menu(array('menu' => 'main_nav')); ?>
+    </div>
+
 </header>
 
 <body>

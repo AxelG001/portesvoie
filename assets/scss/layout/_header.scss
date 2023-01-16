@@ -1,0 +1,80 @@
+
+
+header {
+  background-color: rgb(45, 224, 60);
+  height: 101px;
+  display: flex;
+  width: 100%;
+
+
+  .header_wrapper{
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .menu-main_nav-container{
+    > ul{
+      display: flex ;
+      gap: 46px ;
+      
+      
+       
+    }
+
+      li {
+      font-family: raleway;
+      text-decoration: none;
+      position: relative;
+      
+
+      
+        a {
+          text-decoration: none;
+          color: #3C3939;
+        }
+      }
+
+  }
+
+
+
+  img{
+    width: 260px;
+    height: 80px;
+    
+  }
+    
+    
+     
+        
+
+        .sub-menu{
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          padding:50px 20px;
+          background-color: red;
+          text-align: center;
+          left: 50%;
+          transform: translateX(-50%);
+
+          li{
+            width: 100%;
+          }
+        }
+        
+    
+  
+}
+
+
+
+
+
+

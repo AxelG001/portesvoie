@@ -1,7 +1,10 @@
 <?php
 
     //load CSS 
-    wp_enqueue_style('app', get_template_directory_uri().'/css/app.css',array(), 1,'all');
-
+    if (!is_admin()){
+    wp_enqueue_style('app', get_template_directory_uri().'/assets/css/app.css',array(), 1,'all');
+    };
+    include "include/const.php";
 
     ?>
+
