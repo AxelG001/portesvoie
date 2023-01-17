@@ -1,20 +1,23 @@
 
 
 header {
-  background-color: rgb(45, 224, 60);
-  height: 101px;
-  display: flex;
+  background-color: white;
+  
   width: 100%;
 
+  .current-menu-ancestor:hover ul {
+    display: block;
+    background-color: rgb(250, 0, 0);
+    
+  }
 
   .header_wrapper{
-    max-width: 1280px;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 101px;
+    
+    
     
   }
 
@@ -28,7 +31,7 @@ header {
     }
 
       li {
-      font-family: raleway;
+      font-family: "raleway";
       text-decoration: none;
       position: relative;
       
@@ -36,9 +39,16 @@ header {
       
         a {
           text-decoration: none;
-          color: #3C3939;
+          color: black;
+
+          &:hover{
+            color: #1E96FC;
+          }
         }
+
+      
       }
+      
 
   }
 
@@ -54,7 +64,7 @@ header {
      
         
 
-        .sub-menu{
+        ul .sub-menu{
           display: flex;
           flex-direction: column;
           position: absolute;
@@ -63,9 +73,15 @@ header {
           text-align: center;
           left: 50%;
           transform: translateX(-50%);
+          display: none;
+          
+         
 
           li{
             width: 100%;
+            padding: auto 20px ;
+
+            
           }
         }
         

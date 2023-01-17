@@ -1,4 +1,38 @@
-footer {
-  background-color: rgb(32, 28, 221);
-  height: 100px;
+
+
+  footer {
+  background-color: #1E96FC;
+  height: 300px;
+  .footer_wrapper{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+
+    .colonne{
+
+      
+
+ul{
+  display: flex;
+  gap: 12px ;
+  flex-direction: column;
 }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      
+
+      &-title{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: white;
+        margin-bottom: 24px;
+      }
+    }
+  }
+  
+
+}
+

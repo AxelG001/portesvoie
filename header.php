@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <header>
-    <div class="header_wrapper">
+    <div class="header_wrapper wrapper_big" >
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos.png">
         <?php wp_nav_menu(array('menu' => 'main_nav')); ?>
     </div>

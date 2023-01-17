@@ -1,15 +1,51 @@
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-family: raleway;
+}
+
+
 span {
     &.jaune{
-background-color: yellow ;
+background-color: #FCF300 ;
     }
     &.vert{
 background-color: #4AEBA8;
     }
     &.bleu{
-        background-color: blue;
+        background-color: #1E96FC;
     }
     &.violet{
-        background-color: purple;
+        background-color: #C25FFF;
         
     }
+}
+
+
+
+
+.wrapper_small{
+    max-width: 840px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto; 
+}
+
+.wrapper_big{
+    max-width: 1480px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto; 
 }
