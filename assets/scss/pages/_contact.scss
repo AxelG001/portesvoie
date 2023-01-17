@@ -1,0 +1,29 @@
+.contact{
+    background-color: yellow;
+   width: 100%;
+
+    .wpforms-container{
+        padding: 80px 300px;
+        #wpforms-form-100{
+            input{
+                border-radius: 5px;
+              
+            }
+           
+        }
+    }
+
+    .wpforms-submit-container{
+        .wpforms-submit{
+            border-radius: 5px;
+            background-color: black;
+        }
+    }
+
+    div.wpforms-container-full {
+        .wpforms-form button[type="submit"]{
+            background-color: black;
+            color:white;
+        }
+    }
+}

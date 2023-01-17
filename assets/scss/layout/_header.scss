@@ -5,11 +5,7 @@ header {
   
   width: 100%;
 
-  .current-menu-ancestor:hover ul {
-    display: block;
-    background-color: rgb(250, 0, 0);
-    
-  }
+  
 
   .header_wrapper{
     display: flex;
@@ -27,8 +23,17 @@ header {
       gap: 46px ;
       
       
-       
+       >li{
+
+        &:hover ul {
+          display: flex;
+          background-color: #006AC4;
+          
+        }
+
+       }
     }
+
 
       li {
       font-family: "raleway";
@@ -65,21 +70,39 @@ header {
         
 
         ul .sub-menu{
-          display: flex;
+          
           flex-direction: column;
           position: absolute;
           padding:50px 20px;
-          background-color: red;
+          background-color: #006AC4;
           text-align: center;
           left: 50%;
           transform: translateX(-50%);
           display: none;
+          gap: 20px ;
+          border-radius: 5px;
+          width: 210px;
+          top: calc(100% + 20px);
+          
+          &:before{
+            position: absolute;
+            top: -20px;
+            left: 0;
+            
+            width:100% ;
+            height: 20px;
+            content: "";
+          }
+          a{
+            color: white;
+            font-weight: bold;
+          }
           
          
 
           li{
             width: 100%;
-            padding: auto 20px ;
+            
 
             
           }

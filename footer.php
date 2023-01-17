@@ -1,5 +1,10 @@
 
-
+<div class="footer_contact">
+    <div class="footer_contact_text">
+        Pour nous aidez, contactez-nous:
+    </div>
+    <a style="background-image: url('assets/img/bouton.png');" href="<?php echo get_page_link(ID_PAGE_CONTACT);?>">Contactez-nous</a>
+</div>
 <footer>
     <div class="footer_wrapper wrapper_big">
     <div class ="colonne">
