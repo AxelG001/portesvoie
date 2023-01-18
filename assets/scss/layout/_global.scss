@@ -49,3 +49,108 @@ background-color: #4AEBA8;
     padding-right: 80px;
     margin: 0 auto; 
 }
+
+
+
+
+
+.block {
+    display: flex;
+   align-items: center;
+   text-align: center;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 80px;
+
+
+    h2{
+        font-size: 48px;
+    }
+
+    p{
+        padding-top: 40px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    ul{
+        max-width: 510px;
+        margin: 0 auto;
+    }
+    li{
+        list-style: circle;
+        text-align: left;
+       
+    }
+}
+
+
+
+
+
+
+.button{
+    position: relative;
+    
+
+    &.vert{
+        svg path{
+            fill: #4AEBA8;
+        }
+        span{
+            color: black;
+        }
+
+    }
+
+    &.jaune{
+        svg path{
+            fill: #FCF300;
+        }
+        span{
+            color: black;
+        }
+    }
+    &.violet{
+        svg path{
+            fill: #C25FFF;
+        
+        }
+        span{
+            color: black;
+        }
+    }
+    &.bleu{   svg path{ 
+        fill: #1E96FC;
+    }
+    span{
+        color: black;
+    }
+    }
+    
+    
+    
+    
+    svg{
+        width: 170px;
+        height: auto;
+        display: block;
+
+
+    }   
+
+    span{
+        white-space: nowrap;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+
+    }
+
+    }
+    

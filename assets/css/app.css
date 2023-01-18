@@ -97,6 +97,74 @@ span.violet {
   margin: 0 auto;
 }
 
+.block {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+.block h2 {
+  font-size: 48px;
+}
+.block p {
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.block ul {
+  max-width: 510px;
+  margin: 0 auto;
+}
+.block li {
+  list-style: circle;
+  text-align: left;
+}
+
+.button {
+  position: relative;
+}
+.button.vert svg path {
+  fill: #4AEBA8;
+}
+.button.vert span {
+  color: black;
+}
+.button.jaune svg path {
+  fill: #FCF300;
+}
+.button.jaune span {
+  color: black;
+}
+.button.violet svg path {
+  fill: #C25FFF;
+}
+.button.violet span {
+  color: black;
+}
+.button.bleu svg path {
+  fill: #1E96FC;
+}
+.button.bleu span {
+  color: black;
+}
+.button svg {
+  width: 170px;
+  height: auto;
+  display: block;
+}
+.button span {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
 header {
   background-color: white;
   width: 100%;
@@ -167,27 +235,40 @@ header ul .sub-menu li {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  /************************************************************************
+                      A CHANGER EN CAS DE MISE EN LIGNE SUR SERVEUR (ID)
+  *************************************************************************/
+}
+.page-id-63 .footer_contact {
+  display: none;
 }
 .footer_contact._text {
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
 }
-.footer_contact a {
-  text-decoration: none;
-  width: 156px;
-  height: 71px;
-  background-image: url("assets/img/bouton.png");
-}
 
 footer {
   background-color: #1E96FC;
   height: 300px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+  }
 }
 footer .footer_wrapper {
   display: flex;
   padding-top: 50px;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  footer .footer_wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
 }
 footer .footer_wrapper .colonne ul {
   display: flex;
@@ -215,7 +296,7 @@ div.sticker {
   width: 100%;
 }
 .contact .wpforms-container {
-  padding: 80px 300px;
+  padding: 80px 0px;
 }
 .contact .wpforms-container #wpforms-form-100 input {
   border-radius: 5px;
@@ -275,6 +356,139 @@ section.vous-etes .block li {
 
 h1 {
   font-family: "raleway";
+}
+
+.main .heading-block {
+  padding: 120px 0px;
+}
+.main .heading-block .wrapper_big {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+.main .heading-block .heading-image {
+  width: 30%;
+  height: auto;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 768px) {
+  .main .heading-block .heading-image {
+    display: none;
+  }
+}
+.main .heading-block .heading-image img {
+  width: 100%;
+  height: auto;
+}
+.main .heading-block .heading-text .title-text {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 94px;
+}
+@media screen and (max-width: 768px) {
+  .main .heading-block .heading-text .title-text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+.main .group-stickers {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.main .group-stickers .sticker-body {
+  width: 310px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+}
+.main .group-stickers .sticker-body .sticker-content {
+  height: 100%;
+  gap: 30px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .group-stickers .sticker-body .sticker-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 123.4%;
+}
+.main .group-stickers .sticker-body .sticker-content p.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+.main .group-stickers .sticker-body .sticker-element {
+  width: 74px;
+  height: 4px;
+}
+.main .group-stickers .sticker-body img {
+  height: 69px;
+  width: 69px;
+  display: block;
+}
+
+.cards-block .cards {
+  gap: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .cards-block .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cards-block .cards .card-body {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .cards-block .cards .card-body {
+    border: 2px solid;
+  }
+  .cards-block .cards .card-body.jaune {
+    border-color: #FCF300;
+  }
+  .cards-block .cards .card-body.violet {
+    border-color: #C25FFF;
+  }
+  .cards-block .cards .card-body.bleu {
+    border-color: #1E96FC;
+  }
+  .cards-block .cards .card-body.vert {
+    border-color: #4AEBA8;
+  }
+}
+.cards-block .cards .card-body .card-image {
+  width: 100%;
+}
+.cards-block .cards .card-body .card-image img {
+  display: block;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+}
+.cards-block .cards .card-body .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 0px 10px;
+}
+.cards-block .cards .card-body .card-content .button {
+  align-self: center;
 }
 
 /*# sourceMappingURL=app.css.map */

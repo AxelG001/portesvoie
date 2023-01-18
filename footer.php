@@ -3,7 +3,13 @@
     <div class="footer_contact_text">
         Pour nous aidez, contactez-nous:
     </div>
-    <a style="background-image: url('assets/img/bouton.png');" href="<?php echo get_page_link(ID_PAGE_CONTACT);?>">Contactez-nous</a>
+
+    <?php
+         get_template_part("templates-parts/button",null,array(
+        "link" => get_page_link(ID_PAGE_CONTACT),
+        "title" => "Nous contactez"
+        )); 
+    ?>
 </div>
 <footer>
     <div class="footer_wrapper wrapper_big">

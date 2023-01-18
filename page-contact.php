@@ -11,9 +11,11 @@ $fields=get_fields(get_the_ID());
 ?>
 
 <section class="contact">
+    <div class="wrapper_big">
     <?php 
     the_content();
     ?>
+    </div>
 </section>
 
 

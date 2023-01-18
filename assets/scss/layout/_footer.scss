@@ -8,6 +8,15 @@
   align-items: center;
   gap: 80px;
 
+
+
+  /************************************************************************
+                      A CHANGER EN CAS DE MISE EN LIGNE SUR SERVEUR (ID)
+  *************************************************************************/
+  .page-id-63 &{
+    display: none;
+  }
+
   &._text{
     font-weight: 600;
     font-size: 32px;
@@ -16,13 +25,7 @@
 
   }
 
-  a{
-    text-decoration: none;
-    width: 156px;
-    height: 71px;
-    background-image: url("assets/img/bouton.png");
-    
-  }
+
 }
 
 
@@ -32,10 +35,23 @@
   footer {
   background-color: #1E96FC;
   height: 300px;
+  margin-top: 40px;
+  @media screen and (max-width:768px) {
+    height: auto;
+  
+}
+
   .footer_wrapper{
     display: flex;
     padding-top: 50px;
     justify-content: space-between;
+
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+      gap: 30px ;
+      padding-bottom: 50px;;
+      
+  }
 
     .colonne{
 

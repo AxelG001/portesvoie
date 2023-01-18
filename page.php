@@ -4,7 +4,7 @@ get_header();
 
 $fields=get_fields(get_the_ID());
 $colored_heading=$fields["colored_heading"];
-$blocks_content=$fields["blocks_content"];
+$blocks_content = $fields["blocks_content"];
 
 
 
@@ -19,30 +19,16 @@ $blocks_content=$fields["blocks_content"];
     </h1>
 </div>
 <div class="wrapper_small">
-    
-    <?php 
-     foreach($blocks_content as $block){
-        echo "<div class='block'>";
-        echo "<h2>".$block["block_title"]."</h2>";
-        echo $block["block_content"];
-
-        if( !empty($block["block_list"]) && count($block["block_list"])){
-                echo "<ul>";
-         foreach($block["block_list"] as $list_item){
-              echo  "<li>".$list_item["list_text"]."</li>";
-            }
-            echo"</ul>";
-        }
-        echo "</div>";
-     echo "<hr>";
-     }  
-       
-     
-     
-     ?>
+<?php 
+foreach($blocks_content as $block){
+    get_template_part("templates-parts/intro",null,array(
+        "title" => $block["block_title"],
+        "content" => $block["block_text"],
+        "list" => !empty($block["block_list"]) ? $block["block_list"] : []
+    ));
+}
+?>
 </div>
-     
-     </div>
 </section>
 <?php
 get_footer();
