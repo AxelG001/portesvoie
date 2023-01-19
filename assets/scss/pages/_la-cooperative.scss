@@ -1,0 +1,50 @@
+.main{
+
+    .boxes{
+        display:flex;
+        gap: 120px;
+        flex-direction: column;
+        .box-body{
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            gap: 120px;
+
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+
+            &:nth-child(odd){
+                flex-direction: row;
+            }
+
+            .box-image{
+                width: auto 
+            }
+
+            .box-content{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                .box-title{
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+
+                ul{
+                    li{
+                        margin: 20px 0px;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+
+
+}
